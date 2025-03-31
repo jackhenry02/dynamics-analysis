@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Constants
 
 
-k = 1  # Assuming k = 1 for simplicity (adjust if you have a different value)
+k = 500  # Assuming k = 1 for simplicity (adjust if you have a different value)
 d = 0.06
 
 # Functions for F_1 and d_1 (numerical)
