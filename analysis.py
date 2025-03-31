@@ -21,11 +21,13 @@ theta_values = np.linspace(0, 2 * np.pi, 1000)  # theta goes from 0 to 2π radia
 # Calculate product of F_1 and d_1
 product = F_1(theta_values) * d_1(theta_values)
 product2 = F_2(theta_values) * d_2(theta_values)
+total_moment = product - product2
 
 # Plot
 plt.figure(figsize=(8, 6))
 plt.plot(theta_values, product, label=r'$F_1(\theta) \cdot d_1(\theta)$', color='b')
 plt.plot(theta_values, product2, label=r'$F_2(\theta) \cdot d_2(\theta)$', color='r')
+plt.plot(theta_values, total_moment, label=r'total moment', color='black')
 plt.title(r'Forces against angle $\theta$')
 plt.xlabel(r'$\theta$ (radians)')
 plt.ylabel(r'Moment')
